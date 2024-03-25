@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/quiz_1"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/quizlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:visibility="visible"
+            tools:context=".QuizActivity">
+
+            <include
+                android:id="@+id/navbar_layout"
+                layout="@layout/navbar_layout" />
+
+            <ImageView
+                android:id="@+id/quizImage"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_36sdp"
+                android:layout_marginBottom="@dimen/_10sdp" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/quiztitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="@dimen/_16ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Questions"
+                    android:textSize="@dimen/_14ssp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/questionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/roboto_medium"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="@dimen/_14sdp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Selcet One Of the Option"
+                android:textSize="@dimen/_15sdp" />
+
+            <Button
+                android:id="@+id/option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:backgroundTint="@color/whit"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingHorizontal="@dimen/_50sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="option1"
+                android:textColor="@color/welcomecolor"
+                android:textSize="@dimen/_14ssp" />
+
+            <Button
+                android:id="@+id/option2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:backgroundTint="@color/whit"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingHorizontal="@dimen/_50sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="option2"
+                android:textColor="@color/welcomecolor"
+                android:textSize="@dimen/_14ssp" />
+
+            <Button
+                android:id="@+id/option3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:backgroundTint="@color/whit"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingHorizontal="@dimen/_50sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="option3"
+                android:textColor="@color/welcomecolor"
+                android:textSize="@dimen/_14ssp" />
+
+            <Button
+                android:id="@+id/option4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:backgroundTint="@color/whit"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingHorizontal="@dimen/_50sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="option4"
+                android:textColor="@color/welcomecolor"
+                android:textSize="@dimen/_14ssp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/winner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationVi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/winner" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Congratulation you \n Win a Chance"
+                android:textAlignment="center"
+                android:textSize="@dimen/_20ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/loser" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text=" You Lose \n Please Try Again "
+                android:textAlignment="center"
+                android:textSize="@dimen/_20ssp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</layout>
+

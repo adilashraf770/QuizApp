@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:paddingHorizontal="@dimen/_10sdp"
+       android:background="@drawable/home_1"
+       tools:context=".fragments.HomeFragment"
+       >
+       <include
+           android:id="@+id/nav_layout"
+            layout="@layout/navbar_layout"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/_15sdp"
+           android:padding="@dimen/_14sdp"
+           android:text="@string/category"
+           android:textSize="@dimen/_15ssp"
+           android:textColor="@color/welcomecolor"
+           android:fontFamily="@font/roboto_medium"
+           android:background="@drawable/categorybg"
+           />
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/recyclerView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/_30sdp"
+           />
+
+   </LinearLayout>
+
+</layout>
