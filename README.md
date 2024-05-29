@@ -67,5 +67,4 @@ The proposed project is a Native Android Quiz App designed to provide users with
 - Developers address any remaining issues.
 - The team prepares for deployment.
  
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+ 
